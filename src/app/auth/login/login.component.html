@@ -1,9 +1,9 @@
-<form style="display: flex;justify-content:center">
+<form style="display: flex;justify-content:center" [formGroup]="formGrp">
     <fieldset style="width: 50%;margin-top: 10%;">
       <label for="email">Email</label>
-      <input type="text" placeholder="Enter Email" id="email">
+      <input type="text" placeholder="Enter Email" id="email" formControlName="email">
       <label for="password">Password</label>
-      <input type="password" placeholder="Enter Password" id="password">
+      <input type="password" placeholder="Enter Password" id="password" formControlName="password">
      
       <button style="width:100%" class="button" (click)="login()">Login</button>
 
@@ -12,3 +12,5 @@
       </div>
     </fieldset>
   </form>
+
+  <ngx-spinner type="ball-scale-multiple"></ngx-spinner>
