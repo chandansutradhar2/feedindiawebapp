@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "feedindiawebapp:build:production",
+            "firebaseProject": "restro-1b7ba",
+            "firebaseHostingSite": "restro-1b7ba"
+          }
         }
       }
     }

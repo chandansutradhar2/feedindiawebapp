@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "restro-1b7ba": {
+      "hosting": {
+        "feedindiawebapp": [
+          "restro-1b7ba"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "restro-1b7ba"
+  }
+}

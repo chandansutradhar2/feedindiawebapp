@@ -1,0 +1,19 @@
+<div class="container">
+    <form style="display: flex;justify-content:center" [formGroup]="formGrp">
+        <fieldset style="width: 50%;margin-top: 10%;">
+            <label for="email">Full Name</label>
+            <input type="text" placeholder="Enter Full Name" id="fullName" formControlName="fullName">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" id="email" formControlName="email">
+            <label for="email">Set Password</label>
+            <input type="text" placeholder="Create New Password" id="password" formControlName="password">
+            <label for="email">Mobile No</label>
+          <input type="number" placeholder="(10 Digit Mobile No)" id="mobileNo" formControlName="mobileNo" >
+          <label for="password">I am here for</label>
+          <select id="userTypes" formControlName="userType">
+            <option *ngFor="let u of userTypes" [value]="u.value">{{u.display}}</option>
+          </select>
+          <button class="button-primary" style="width:100%" (click)="createAccount()" value="Login">CREATE ACCOUNT</button>
+        </fieldset>
+      </form>
+</div>

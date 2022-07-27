@@ -1,0 +1,14 @@
+<form style="display: flex;justify-content:center">
+    <fieldset style="width: 50%;margin-top: 10%;">
+      <label for="email">Email</label>
+      <input type="text" placeholder="Enter Email" id="email">
+      <label for="password">Password</label>
+      <input type="password" placeholder="Enter Password" id="password">
+     
+      <button style="width:100%" class="button" (click)="login()">Login</button>
+
+      <div>
+        <input class="button button-clear" [routerLink]="'./signup'" value="New User ? Click here">
+      </div>
+    </fieldset>
+  </form>
